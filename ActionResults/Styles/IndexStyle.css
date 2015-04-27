@@ -1,0 +1,26 @@
+﻿body {
+    background-color: black;
+}
+#character_table, td, tr{
+    color: white;
+    border: 2px solid yellow;
+}
+.character_div{
+    position: static;
+    border: 2px solid red;
+}
+#Name{
+    border: 2px solid blue;
+}
+#Image{
+    border: 2px solid white;
+}
+#Level{
+    border: 2px solid green;
+}
+#HP{
+    border: 2px solid purple;
+}
+#Attributes{
+    border: 2px solid yellow;
+}
