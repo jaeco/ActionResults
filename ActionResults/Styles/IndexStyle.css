@@ -1,16 +1,22 @@
 ﻿body {
     background-color: black;
+}   
+    /*links*/
+#navbar a:link{
+    color:#17f1ff;
 }
-#character_table, td, tr{
-    border: 2px solid yellow;
+#navbar a:visited{
+    color:#fdff17;
+}#navbar a:hover{
+    color:#942A5F;
+}#navbar a:active{
+    color:#6FB25C;
 }
 .character_div{
-    position: static;
-    border: 2px solid red;
+    position: relative;
     color: white;
 }
 #Name{
-    border: 2px solid blue;
     width: 343px;
     height: 40px;
     font-size: 25px;
@@ -18,17 +24,24 @@
     text-align: center;
 }
 #Image{
-    border: 2px solid white;
     background: url(../Images/pic1983177_md.jpg), no-repeat;
     width: 343px;
     height: 500px;
+    position: static;
 }
+.stats{
+    position: absolute;
+    left: 360px;
+    top: 8%;
+    width: 10%;
+}
+
 #Level{
-    border: 2px solid green;
+    background-color: #7ceea5;
 }
 #HP{
-    border: 2px solid purple;
+    background-color: #ee7c7c;
 }
 #Attributes{
-    border: 2px solid yellow;
+    background-color: #967cee;
 }

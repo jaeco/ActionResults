@@ -87,6 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Images\funny.jpg" />
     <Content Include="Images\pic1983177_md.jpg" />
     <Content Include="Styles\IndexStyle.css" />
     <Content Include="Web.config" />

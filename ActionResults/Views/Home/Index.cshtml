@@ -12,94 +12,41 @@
     <title>Index</title>
 </head>
 <body>
+    <div id="navbar">
+            @Html.ActionLink("Text", "StringPage")
+            @Html.ActionLink("XML", "XMLPage")
+            @Html.ActionLink("JSON", "JSONPage")
+            @Html.ActionLink("Hey_Gurl", "ErrorPage")
+            @Html.ActionLink("Download", "DownloadPage")
+    </div>
     <div class="character_div">
         <div id="Name">
             @Model.Name
         </div>
         <div id="Image">
         </div>
-        <div id="Level">
-            <h3>Level: @Model.Level</h3>
-        </div>
-        <div id="HP">
-            <h3>HP: @Model.HealthPoints</h3>
-        </div>
-        <div id="Attributes">
-            <h3>Attributes</h3>
-            <table id="attributes_tables">
-                @foreach (KeyValuePair <string, Int32> attribute in Model.Attributes)
-                    {
-                     <tr>
-                        <td>@attribute.Key:</td>
-                        <td>@attribute.Value</td>
-                    </tr>
-                    }
-            </table>
-        </div>
+   <div class="stats">
+            <div id="Level">
+                <h3>Level: @Model.Level</h3>
+            </div>
+            <div id="HP">
+                <h3>HP: @Model.HealthPoints</h3>
+            </div>
+            <div id="Attributes">
+                <h3>Attributes</h3>
+                <table id="attributes_tables">
+                    @foreach (KeyValuePair <string, Int32> attribute in Model.Attributes)
+                        {
+                         <tr>
+                            <td>@attribute.Key:</td>
+                            <td>@attribute.Value</td>
+                        </tr>
+                        }
+                </table>
+            </div>
     </div>
-    <br />
-    <br />
-    <br />
-    <br />
-    <div>
-        <table id="character_table">
-            <tr>
-                <th colspan="2" id="name_headercell">Name</th>
-            </tr>
-            <tr>
-                <td rowspan="11" id="image_cell">IMAGE HERE</td>
-            </tr>
-            <tr>
-                <th id="level_headercell">LEVEL</th>
-                <td>NUM</td>
-            </tr>
-            <tr>
-                <th id="hp_headercell">HP</th>
-                <td>NUM</td>
-            </tr>
-            <!--<tr>
-                <td colspan="2">ATTRIBUTES</td>
-            </tr> -->
-            <th colspan="2" id="attributes_headercell">Attributes</th>
-            <tr>
-                <td colspan="2">
-                    <table id="attributes_tables">
-                        <tr>
-                            <td>ATTR:</td>
-                            <td>NUM</td>
-                        </tr>
-                        <tr>
-                            <td>ATTR:</td>
-                            <td>NUM</td>
-                        </tr>
-                        <tr>
-                            <td>ATTR:</td>
-                            <td>NUM</td>
-                        </tr>
-                        <tr>
-                            <td>ATTR:</td>
-                            <td>NUM</td>
-                        </tr>
-                        <tr>
-                            <td>ATTR:</td>
-                            <td>NUM</td>
-                        </tr>
-                        <tr>
-                            <td>ATTR:</td>
-                            <td>NUM</td>
-                        </tr>
-                        <tr>
-                            <td>ATTR:</td>
-                            <td>NUM</td>
-                        </tr>
-                        <tr>
-                            <td>ATTR:</td>
-                            <td>NUM</td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            </table>
-    </div>
+
+        XML Page does not work, unsure why but it is commented out so that everything else would run.
+        </div>
 </body>
 </html>
