@@ -14,7 +14,7 @@ namespace ActionResults.Controllers
         //Main page
         public ActionResult Index()
         {
-            jon.Name = "John";
+            jon.Name = "John Jingleheimershcmidt";
             jon.Level = 12;
             jon.HealthPoints = 200;
             return View(jon);

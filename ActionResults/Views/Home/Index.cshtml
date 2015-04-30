@@ -13,19 +13,18 @@
 </head>
 <body>
     <div class="character_div">
-        <div class="character_div" id="Name">
-            <h1>@Model.Name</h1>
+        <div id="Name">
+            @Model.Name
         </div>
-        <div class="character_div" id="Image">
-            <h1>IMAGE HERE</h1>
+        <div id="Image">
         </div>
-        <div class="character_div" id="Level">
+        <div id="Level">
             <h3>Level: @Model.Level</h3>
         </div>
-        <div class="character_div" id="HP">
+        <div id="HP">
             <h3>HP: @Model.HealthPoints</h3>
         </div>
-        <div class="character_div" id="Attributes">
+        <div id="Attributes">
             <h3>Attributes</h3>
             <table id="attributes_tables">
                 @foreach (KeyValuePair <string, Int32> attribute in Model.Attributes)
