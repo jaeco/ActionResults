@@ -32,22 +32,22 @@ namespace ActionResults.Controllers
         }
 
         //XML Page
-        //public ActionResult XMLPage()
-        //{
-        //    var serializer = new DataContractSerializer(typeof(Character));
-        //    string xmlString;
-        //    using (var sw = new StringWriter())
-        //    {
-        //        using (var writer = new XmlTextWriter(sw))
-        //        {
-        //            writer.Formatting = Formatting.Indented; // indent the Xml so it's human readable
-        //            serializer.WriteObject(writer, jon);
-        //            writer.Flush();
-        //            xmlString = sw.ToString();
-        //            return this.Content(xmlString, "text/xml");
-        //        }
-        //    }
-        //}
+        public ActionResult XMLPage()
+        {
+            DataContractSerializer serializer = new DataContractSerializer(typeof(Character));
+            string xmlString;
+            using (var sw = new StringWriter())
+            {
+                using (var writer = new XmlTextWriter(sw))
+                {
+                    writer.Formatting = Formatting.Indented; // indent the Xml so it's human readable
+                    serializer.WriteObject(writer, jon);
+                    writer.Flush();
+                    xmlString = sw.ToString();
+                    return this.Content(xmlString, "text/xml");
+                }
+            }
+        }
 
         //JSON Page
         public ActionResult JSONPage()
